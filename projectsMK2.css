@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.wholePage{
+	display: grid;
+	position: fixed;
+	grid-template-columns: 25vw 0.1vw 75vw;
+	grid-template-rows: 100vh ;
+}
+
+body {
+	font-family: Consolas, sans-serif;
+	background-color: white;	
+}
+
+.LeftBar{
+	background-color: white;
+	
+}
+.imagelogo{
+	height: 100vh;
+	display: contain;
+	width: 25vw;
+	height: 50vw;
+}
+
+.text1{
+	position: relative;
+	right: 0%;
+	top: 0%;
+	transform: rotate(-90deg);
+	line-width: 5vh;
+	font-size: 6vh;
+	}
+.text2{
+	transform: rotate(-90deg);
+	vertical-align:baseline;
+
+}
+
+.MiddleLine{
+	background-color: #7C7C7C;
+	z-index: 1000;
+}
+
+
+.RightGrid{
+	display: grid;
+	position:absolute;
+  	grid-template-columns: 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh;
+ 	grid-auto-rows: 25vh 25vh 25vh 25vh;
+/*	justify-items:center;
+	grid-template-columns:repeat(8, 1fr);
+	align-items:center; */
+	margin-left: 1vw;
+	right: 0%;
+}
+
+.content1{
+	color: white;
+	position: absolute;
+	bottom: 10%;
+	right: 2%;
+	font-size: 1.9vh;
+}
+.content2{
+	color: white;
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	font-size: 1.9vh;
+
+}
+.content3{
+	color: white;
+	position: absolute;
+	bottom: 20%;
+	right: 2%;
+	font-size: 1.9vh;
+
+}
+.content4{
+	color: white;
+	position: absolute;
+	bottom: 2%;
+	right: 1%;
+	font-size: 1.9vh;
+
+}
+.content5{
+	color: white;
+	position: absolute;
+	bottom: 10%;
+	right: 1%;
+	font-size: 1.9vh;
+
+}
+
+.li1{
+	grid-column:span 4; grid-row: span 2; 
+	margin-right: 0px;
+
+}
+.image1{
+	position: relative;
+	height: 50vh; 
+	object-fit: cover;
+	z-index: 10;
+}
+.overlay1{
+	position: absolute;
+	z-index: 20;
+	width: 50vh;
+	height: 50vh;
+	top: 0;
+	left: 0vw;
+	opacity: 0;
+	transition: 1s;
+}
+.overlay1:hover{
+	opacity: 0.6;
+	background-color: black;}
+#button1{
+	 
+	height: 50vh;
+	width: 50vh;
+}
+
+.li2{grid-column:span 2; grid-row: span 2;
+	margin-right: 0px;
+
+}
+.image2{
+	position: relative;
+	height: 50vh; 
+	object-fit: cover;
+	z-index: 10;
+}
+.overlay2{
+	position: absolute;
+	z-index: 20;
+	width: 25vh;
+	height: 50vh;
+	top: 0;
+	opacity: 0;
+	transition: 1s;
+}
+.overlay2:hover{
+	opacity: 0.6;
+	background-color: black;
+
+}
+#button2{
+	 
+	height: 50vh;
+	width: 25vh;
+}
+
+.li3{grid-column:span 4; grid-row: span 1;
+	margin-right: 0px;
+}
+.image3{
+	position: relative;
+	height: 25vh; 
+	object-fit: cover;
+	z-index: 15;
+}
+.overlay3{
+	position: absolute;
+	z-index: 20;
+	width: 50vh;
+	height: 25vh;
+	top: 0;
+	opacity: 0;
+	transition: 1s;
+
+}
+.overlay3:hover{
+	opacity: 0.6;
+	background-color: black;
+
+}
+#button3{
+	 
+	height: 25vh;
+	width: 50vh;;
+}
+
+.li4{grid-column:span 4; grid-row: span 2;
+	margin-right: 0px;
+}
+.image4{
+	position: relative;
+	height: 50vh; 
+	object-fit: cover;
+	z-index: 10;
+}
+.overlay4{
+	position: absolute;
+	z-index: 20;
+	width: 50vh;
+	height: 50vh;
+	top: 25vh;
+	opacity: 0;
+	transition: 1s;
+	
+}
+.overlay4:hover{
+	opacity: 0.6;
+	background-color: black;
+
+}
+#button4{
+	 
+	height: 50vh;
+	width: 50vh;;
+}
+
+.li5{grid-column:span 3; grid-row: span 1;
+	margin-right: 0px;
+	z-index: 3;
+}
+.image5{
+	position: relative;
+	height: 25vh; 
+	object-fit: cover;
+	z-index: 10;
+}
+.overlay5{
+	position: absolute;
+	z-index: 20;
+	width: 37.5vh;
+	height: 25vh;
+	top: 50vh;
+	opacity: 0;
+	transition: 1s;
+	
+}
+.overlay5:hover{
+	opacity: 0.6;
+	background-color: black;
+
+}
+#button5{
+	 
+	height: 25vh;
+	width: 37.5vh;;
+}
+
+.li6{grid-column:span 3; grid-row: span 1;
+	margin-right: 0px;
+	z-index: 4;
+}
+.image6{
+	position: relative;
+	height: 25vh; 
+	object-fit: cover;
+	z-index: 10;
+}
+.overlay6{
+	position: absolute;
+	z-index: 20;
+	width: 37.5vh;
+	height: 25vh;
+	top: 50vh;
+	opacity: 0;
+	transition: 1s;
+	
+}
+.overlay6:hover{
+	opacity: 0.6;
+	background-color: black;
+
+}
+#button6{
+	 
+	height: 25vh;
+	width: 37.5vh;;
+}
+
+.li7{grid-column:span 2; grid-row: span 1;
+	margin-right: 0px;
+	
+}
+.image7{
+	position: relative;
+	height: 25vh; 
+	object-fit: cover;
+	z-index: 10;
+}
+.overlay7{
+	position: absolute;
+	z-index: 20;
+	width: 25vh;
+	height: 25vh;
+	top: 75vh;
+	opacity: 0;
+	transition: 1s;
+	
+}
+.overlay7:hover{
+	opacity: 0.6;
+	background-color: black;
+
+}
+#button7{
+	 
+	height: 25vh;
+	width: 25vh;
+}
+
+.li8 {grid-column:span 8; grid-row: span 1;
+	margin-right: 0px;
+}
+.image8{
+	position: relative;
+	height: 25vh; 
+	object-fit: cover;
+	z-index: 10;
+}
+.overlay8{
+	position: absolute;
+	z-index: 20;
+	width: 100vh;
+	height: 25vh;
+	top: 75vh;
+	opacity: 0;
+	transition: 1s;
+
+
+}
+.overlay8:hover{
+	opacity: 0.6;
+	background-color: black;
+
+}
+#button8{
+	 
+	height: 25vh;
+	width: 100vh;
+}
+
+
+.button{	
+	
+ 	background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	transition-delay: 2s;
+	z-index: 50;
+}
+
+
+
+
+
+
+
